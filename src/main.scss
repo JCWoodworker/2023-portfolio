@@ -1,44 +1,25 @@
-* {
-  margin: 0;
-  padding: 0;
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+.top-navigation-main-container {
+  background-color: black;
+  padding: 2rem 0;
 }
 
-body {
-  padding-top: 56px; /* Adjust the top padding to make room for the fixed navbar */
-}
-
-.nav-bar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 250px; /* Adjust the width of the navbar as needed */
-  background-color: #f8f9fa; /* Set the desired background color for the navbar */
-  z-index: 100; /* Make sure the navbar is on top of other content */
-}
-
-.navbar-toggler {
-  border: none; /* Remove the border of the navbar toggler button */
-}
-
-/* Media query to change the layout on smaller screens */
-@media (max-width: 991.98px) {
-  .nav-bar {
-    width: 100%;
-    height: 56px; /* Adjust the height to your preference */
-    position: fixed;
-  }
-
-  .navbar-collapse {
-    width: 100%;
-  }
-
-  .navbar-toggler {
-    margin: auto;
-  }
-
-  .navbar-nav {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.navbar-brand, .nav-link {
+  color: white;
+  &:hover {
+    color: gray
+  };
+  &:active {
+    color: gray
+  };
+  &:focus {
+    color: gray
+  };
+  &:visited {
+    color: white
+  };
 }
