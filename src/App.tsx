@@ -6,10 +6,10 @@ import "./main.scss"
 const App = () => {
 	return (
 		<div className="app-container">
-			<div>
+			<div className="nav-container">
 				<Navigation />
 			</div>
-			<div>
+			<div  className="main-page-container">
 				<MainPage />
 			</div>
 		</div>

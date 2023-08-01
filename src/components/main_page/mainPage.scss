@@ -1,7 +1,43 @@
+@use "../../assets/styles/index" as *;
+
 .main-page-container {
-  margin: 1rem;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 1rem;
+  background-color: $medium-gray;
+  overflow-y: scroll;
 }
+
+.main-page-title {
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 100%;
+  @include flex-col-center;
+}
+.main-page-logo {
+  height: 300px;
+  width: auto;
+}
+
+.main-page-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+  .main-page-child {
+    background-color: $dark-blue;
+    border: 1px solid $main-font-color;
+    width: 20%;
+    border-radius: 0.25rem;
+    min-width: 48%;
+    min-height: 300px;
+    @include flex-col-center;
+    z-index: 0;
+  }
+
+  @media (max-width: 900px) {
+    .main-page-child {
+      width: 100%;
+    }
+  }

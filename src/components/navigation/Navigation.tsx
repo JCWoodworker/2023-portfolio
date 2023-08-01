@@ -31,14 +31,14 @@ const Nav = () => {
 							loading="lazy"
 						></img>
 					</div>
-					<h2>James Corey</h2>
+					<h2 className="nav-title-name">James Corey</h2>
 				</div>
-				<div className="nav-side-links">
-					<p className="nav-link-side">Home</p>
-					<p className="nav-link-side">Projects</p>
-					<p className="nav-link-side">Skills</p>
+				<div className="nav-side-links-container">
+					<p className="nav-link">Home</p>
+					<p className="nav-link">Projects</p>
+					<p className="nav-link">Skills</p>
 				</div>
-				<div className="spacer"></div>
+				<div className="nav-side-links-spacer"></div>
 				<div className="nav-social-media-icons">
 					<i className="bi bi-linkedin"></i>
 					<i className="bi bi-github"></i>

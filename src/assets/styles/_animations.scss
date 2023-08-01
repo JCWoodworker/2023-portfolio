@@ -1,0 +1,22 @@
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.child-fade-in-container {
+	opacity: 0;
+}
+
+.child-fade-in-container {
+	animation: fadeIn 2s forwards;
+}
+
+@for $i from 1 through 99 {
+  .parent-fade-in-container > .child-fade-in-container:nth-child(#{$i}) {
+    animation-delay: 0.3s * $i;
+  }
+}
