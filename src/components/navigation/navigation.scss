@@ -30,11 +30,8 @@
 	.nav-top-links {
 		display: none;
 	}
-  .blur-image {
-    background-image: url("../../assets/images/headshot.png");
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
+  .blur-headshot {
+    @include blur-image("../../assets/images/headshot.png", 50%);
   }
 	.nav-headshot {
 		width: 200px;
@@ -43,7 +40,7 @@
 		border: 3px solid $main-font-color;
     object-position: center;
     object-fit: cover;
-  }s
+  }
 	.spacer {
 		flex-grow: 1;
 	}

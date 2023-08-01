@@ -24,12 +24,12 @@ const Nav = () => {
 		<>
 			<div className="nav-bar-side  ">
 				<div className="nav-headshot-and-title">
-					<div className="blur-image">
+					<div className="blur-headshot">
 						<img
-						className="nav-headshot"
-						src="https://s3.amazonaws.com/jcwoodworker.portfolio/jc-headshot-large.svg"
-            loading="lazy"
-					></img>
+							className="nav-headshot"
+							src="https://s3.amazonaws.com/jcwoodworker.portfolio/jc-headshot-large.svg"
+							loading="lazy"
+						></img>
 					</div>
 					<h2>James Corey</h2>
 				</div>

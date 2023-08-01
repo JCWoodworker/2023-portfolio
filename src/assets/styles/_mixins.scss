@@ -1,0 +1,8 @@
+@mixin blur-image($url, $radius) {
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  @if ($radius) {
+    border-radius: $radius;
+  }
+}
