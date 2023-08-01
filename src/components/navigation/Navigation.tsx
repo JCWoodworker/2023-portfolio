@@ -26,7 +26,7 @@ const Nav = () => {
 				<div className="nav-headshot-and-title">
 					<img
 						className="nav-headshot"
-						src="../../../public/jc_headshot.svg"
+						src="https://s3.amazonaws.com/jcwoodworker.portfolio/jc_headshot.svg"
 					></img>
 					<h2>James Corey</h2>
 				</div>
