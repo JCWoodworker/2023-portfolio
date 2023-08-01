@@ -1,25 +1,20 @@
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
+@use './assets/styles/index.scss' as *;
 
-.top-navigation-main-container {
-  background-color: black;
-  padding: 2rem 0;
+body {
+	color: $main-font-color;
+	background-color: $medium-gray;
 }
 
-.navbar-brand, .nav-link {
-  color: white;
-  &:hover {
-    color: gray
-  };
-  &:active {
-    color: gray
-  };
-  &:focus {
-    color: gray
-  };
-  &:visited {
-    color: white
-  };
+@media (min-width: 901px) {
+	.app-container {
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+	}
+}
+@media (max-width: 900px) {
+	.app-container {
+		display: grid;
+		grid-template-rows: 50px, auto;
+		height: 100vh;
+	}
 }

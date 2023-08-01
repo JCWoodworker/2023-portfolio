@@ -1,0 +1,59 @@
+@use '../../assets/styles/index' as *;
+
+@media (min-width: 901px) {
+	.nav-bar-side {
+    background-color: $dark-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+		padding: 0.5rem;
+		height: 100vh;
+    min-width: 250px
+	}
+  .nav-side-links {
+    margin-top: 4rem;
+  }
+  .nav-link-side {
+    font-size: large;
+    font-weight: bold;
+  }
+	.nav-bar-top {
+		display: none;
+	}
+	.nav-top-links {
+		display: none;
+	}
+}
+@media (max-width: 900px) {
+	.nav-bar-side {
+		display: none;
+	}
+	.nav-bar-top {
+		background-color: $dark-gray;
+		padding: 0.5rem;
+		position: sticky;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav-top-links {
+		padding: 0.5rem;
+		padding-top: 1rem;
+		position: fixed;
+		right: 0;
+		width: 45vw;
+		height: 100vh;
+		background-color: $dark-gray;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1rem;
+		.nav-link-top {
+			font-size: large;
+			font-weight: bold;
+		}
+	}
+}
