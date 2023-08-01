@@ -31,12 +31,53 @@ const Nav = () => {
 							loading="lazy"
 						></img>
 					</div>
-					<h2 className="nav-title-name">James Corey</h2>
+					<h2 className="nav-title-name">
+						<span>J</span>
+						<span>a</span>
+						<span>m</span>
+						<span>e</span>
+						<span>s</span>&nbsp;
+						<span>C</span>
+						<span>o</span>
+						<span>r</span>
+						<span>e</span>
+						<span>y</span>
+					</h2>
 				</div>
 				<div className="nav-side-links-container">
-					<p className="nav-link">Home</p>
-					<p className="nav-link">Projects</p>
-					<p className="nav-link">Skills</p>
+					<p className="nav-link">
+						<span>H</span>
+						<span>o</span>
+						<span>m</span>
+						<span>e</span>
+					</p>
+					<p className="nav-link">
+						<span>P</span>
+						<span>r</span>
+						<span>o</span>
+						<span>j</span>
+						<span>e</span>
+						<span>c</span>
+						<span>t</span>
+						<span>s</span>
+					</p>
+					<p className="nav-link">
+						<span>S</span>
+						<span>k</span>
+						<span>i</span>
+						<span>l</span>
+						<span>l</span>
+						<span>s</span>
+					</p>
+					<p className="nav-link">
+						<span>C</span>
+						<span>o</span>
+						<span>n</span>
+						<span>t</span>
+						<span>a</span>
+						<span>c</span>
+						<span>t</span>
+					</p>
 				</div>
 				<div className="nav-side-links-spacer"></div>
 				<div className="nav-social-media-icons">
