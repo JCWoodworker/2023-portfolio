@@ -14,7 +14,8 @@ body {
 @media (max-width: 900px) {
 	.app-container {
 		display: grid;
-		grid-template-rows: 50px, auto;
+		grid-template-rows: 50px auto;
 		height: 100vh;
+		align-items: start;
 	}
 }
