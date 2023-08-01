@@ -29,8 +29,8 @@
 		@include blur-image("../../assets/images/headshot.png", 50%);
   }
 	.nav-headshot {
-		width: 200px;
-    height: 200px;
+		width: 180px;
+    height: 180px;
 		border-radius: 50%;
 		border: 3px solid $main-font-color;
     object-position: center;
@@ -38,7 +38,8 @@
   }
 
 	.nav-title-name {
-		margin-top: 1rem;
+		margin-top: 1.5rem;
+		font-size: 1.75rem;
 	}
 
 	.nav-side-links-spacer {
