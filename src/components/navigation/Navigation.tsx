@@ -5,8 +5,8 @@ const Nav = () => {
 	const [viewNavTopLinks, setViewNavTopLinks] = useState(false)
 
 	let navTopLinks = null
-  let threeDotsIcon = "bi bi-three-dots-vertical"
-  
+	let threeDotsIcon = "bi bi-three-dots-vertical"
+
 	if (viewNavTopLinks) {
 		navTopLinks = (
 			<div className="nav-top-links">
@@ -15,7 +15,7 @@ const Nav = () => {
 				<p className="nav-link-top">Page 3</p>
 			</div>
 		)
-    threeDotsIcon = "bi bi-three-dots"
+		threeDotsIcon = "bi bi-three-dots"
 	} else {
 		navTopLinks = null
 	}
@@ -23,11 +23,22 @@ const Nav = () => {
 	return (
 		<>
 			<div className="nav-bar-side  ">
-				<h1>Navigation</h1>
+				<div className="nav-headshot-and-title">
+					<img
+						className="nav-headshot"
+						src="../../../public/jc_headshot.svg"
+					></img>
+					<h2>James Corey</h2>
+				</div>
 				<div className="nav-side-links">
 					<p className="nav-link-side">Home</p>
-					<p className="nav-link-side">Page 2</p>
-					<p className="nav-link-side">Page 3</p>
+					<p className="nav-link-side">Projects</p>
+					<p className="nav-link-side">Skills</p>
+				</div>
+				<div className="spacer"></div>
+				<div className="nav-social-media-icons">
+					<i className="bi bi-linkedin"></i>
+					<i className="bi bi-github"></i>
 				</div>
 			</div>
 			<div className="nav-bar-top">
