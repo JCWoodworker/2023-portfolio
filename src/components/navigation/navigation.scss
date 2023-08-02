@@ -20,9 +20,12 @@
 	}
 	.nav-link {
 		font-size: 1.5rem;
+		border-radius: 1rem;
 		&:hover {
 			color: $medium-blue;
+			cursor: pointer;
 		}
+
 	}
 
   .blur-headshot {
