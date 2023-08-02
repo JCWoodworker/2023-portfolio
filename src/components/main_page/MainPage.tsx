@@ -13,7 +13,7 @@ const MainPage = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowTitle(false)
-		}, 5000)
+		}, 2500)
 
 		return () => clearTimeout(timer)
 	}, [])

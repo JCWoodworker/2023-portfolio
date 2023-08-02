@@ -12,7 +12,7 @@
 }
 
 .child-fade-in-container {
-	animation: fadeIn 2s forwards;
+	animation: fadeIn 1s forwards;
 }
 
 @for $i from 1 through 99 {
@@ -39,7 +39,7 @@ p, h2 {
     
     @for $i from 1 through 20 {
       &:nth-child(#{$i}) {
-        animation-delay: 0.04s * $i;
+        animation-delay: 0.1s * $i;
       }
     }
   }
@@ -63,5 +63,5 @@ p, h2 {
 }
 
 .fade-out {
-  animation: fadeOut 3s linear forwards;
+  animation: fadeOut 2.5s linear forwards;
 }
