@@ -11,8 +11,8 @@
   @include flex-col-center;
 }
 .main-page-logo {
-  height: 300px;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .main-page-grid {
@@ -20,7 +20,6 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
 }
 
   .main-page-child {

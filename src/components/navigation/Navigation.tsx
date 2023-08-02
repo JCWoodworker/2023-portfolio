@@ -1,5 +1,8 @@
 import { useState } from "react"
+
 import "./navigation.scss"
+
+import typedWordAnimation from "../../utilities/typedWordAnimation"
 
 const Nav = () => {
 	const [viewNavTopLinks, setViewNavTopLinks] = useState(false)
@@ -20,6 +23,11 @@ const Nav = () => {
 		navTopLinks = null
 	}
 
+	const navLinkHome = typedWordAnimation("Home", "nav-link")
+	const navLinkProjects = typedWordAnimation("Projects", "nav-link")
+	const navLinkSkills = typedWordAnimation("Skills", "nav-link")
+	const navLinkContact = typedWordAnimation("Contact", "nav-link")
+
 	return (
 		<>
 			<div className="nav-bar-side  ">
@@ -31,53 +39,13 @@ const Nav = () => {
 							loading="lazy"
 						></img>
 					</div>
-					<h2 className="nav-title-name">
-						<span>J</span>
-						<span>a</span>
-						<span>m</span>
-						<span>e</span>
-						<span>s</span>&nbsp;
-						<span>C</span>
-						<span>o</span>
-						<span>r</span>
-						<span>e</span>
-						<span>y</span>
-					</h2>
+					<h2 className="nav-title-name">James Corey</h2>
 				</div>
 				<div className="nav-side-links-container">
-					<p className="nav-link">
-						<span>H</span>
-						<span>o</span>
-						<span>m</span>
-						<span>e</span>
-					</p>
-					<p className="nav-link">
-						<span>P</span>
-						<span>r</span>
-						<span>o</span>
-						<span>j</span>
-						<span>e</span>
-						<span>c</span>
-						<span>t</span>
-						<span>s</span>
-					</p>
-					<p className="nav-link">
-						<span>S</span>
-						<span>k</span>
-						<span>i</span>
-						<span>l</span>
-						<span>l</span>
-						<span>s</span>
-					</p>
-					<p className="nav-link">
-						<span>C</span>
-						<span>o</span>
-						<span>n</span>
-						<span>t</span>
-						<span>a</span>
-						<span>c</span>
-						<span>t</span>
-					</p>
+					<p className="nav-link">{navLinkHome}</p>
+					<p className="nav-link">{navLinkProjects}</p>
+					<p className="nav-link">{navLinkSkills}</p>
+					<p className="nav-link">{navLinkContact}</p>
 				</div>
 				<div className="nav-side-links-spacer"></div>
 				<div className="nav-social-media-icons">
@@ -86,7 +54,10 @@ const Nav = () => {
 				</div>
 			</div>
 			<div className="nav-bar-top">
-				<h1>James Corey</h1>
+				<img
+					className="top-nav-logo"
+					src="https://s3.amazonaws.com/jcwoodworker.portfolio/jc-logo-blue.svg"
+				></img>
 				<i
 					className={`${threeDotsIcon} menu-icon`}
 					onClick={() => setViewNavTopLinks(!viewNavTopLinks)}
