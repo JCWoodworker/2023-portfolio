@@ -5,7 +5,7 @@ const Nav = () => {
 	const [viewNavTopLinks, setViewNavTopLinks] = useState(false)
 
 	let navTopLinks = null
-	let threeDotsIcon = "bi bi-three-dots-vertical"
+	let threeDotsIcon = "bi bi-three-dots-vertical dots-icon"
 
 	if (viewNavTopLinks) {
 		navTopLinks = (
@@ -15,7 +15,7 @@ const Nav = () => {
 				<p className="nav-link-top">Page 3</p>
 			</div>
 		)
-		threeDotsIcon = "bi bi-three-dots"
+		threeDotsIcon = "bi bi-three-dots dots-icon"
 	} else {
 		navTopLinks = null
 	}
@@ -86,7 +86,7 @@ const Nav = () => {
 				</div>
 			</div>
 			<div className="nav-bar-top">
-				<h1>Navigation</h1>
+				<h1>James Corey</h1>
 				<i
 					className={`${threeDotsIcon} menu-icon`}
 					onClick={() => setViewNavTopLinks(!viewNavTopLinks)}

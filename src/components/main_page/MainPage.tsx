@@ -4,8 +4,10 @@ const MainPage = () => {
 	return (
 		<>
 			<div className="main-page-title">
-				<img src="https://s3.amazonaws.com/jcwoodworker.portfolio/logo_full.svg" 
-				className="main-page-logo"/>
+				<img
+					src="https://s3.amazonaws.com/jcwoodworker.portfolio/logo_full.svg"
+					className="main-page-logo"
+				/>
 			</div>
 			<div className="main-page-grid parent-fade-in-container">
 				<div className="main-page-child child-fade-in-container">
@@ -31,18 +33,6 @@ const MainPage = () => {
 				</div>
 				<div className="main-page-child child-fade-in-container">
 					<h1>Div 8</h1>
-				</div>
-				<div className="main-page-child child-fade-in-container">
-					<h1>Div 9</h1>
-				</div>
-				<div className="main-page-child child-fade-in-container">
-					<h1>Div 10</h1>
-				</div>
-				<div className="main-page-child child-fade-in-container">
-					<h1>Div 11</h1>
-				</div>
-				<div className="main-page-child child-fade-in-container">
-					<h1>Div 12</h1>
 				</div>
 			</div>
 		</>
