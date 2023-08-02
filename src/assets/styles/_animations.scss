@@ -45,19 +45,23 @@ p, h2 {
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .menu-icon {
 	transition: transform 0.1s ease-in-out;
 
 	&.rotated {
 		transform: rotate(90deg);
 	}
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 3s linear forwards;
 }

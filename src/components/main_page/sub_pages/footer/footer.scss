@@ -1,0 +1,6 @@
+@use "../../../../assets/styles/index" as *;
+
+.footer-container {
+  padding: 1rem;
+  @include flex-row-wrap-center;
+}

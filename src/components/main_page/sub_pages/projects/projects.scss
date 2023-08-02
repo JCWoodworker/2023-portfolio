@@ -1,0 +1,15 @@
+@use "../../../../assets/styles/index" as *;
+
+.projects-container {
+	@include flex-row-wrap-center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.project-card {
+	background-color: $dark-slate-gray;
+}
