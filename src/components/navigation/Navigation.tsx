@@ -8,7 +8,6 @@ const Nav = () => {
 	const [viewNavTopLinks, setViewNavTopLinks] = useState(false)
 
 	let navTopLinks = null
-	let threeDotsIcon = "bi bi-three-dots-vertical dots-icon"
 
 	if (viewNavTopLinks) {
 		navTopLinks = (
@@ -18,7 +17,6 @@ const Nav = () => {
 				<p className="nav-link-top">Page 3</p>
 			</div>
 		)
-		threeDotsIcon = "bi bi-three-dots dots-icon"
 	} else {
 		navTopLinks = null
 	}
@@ -54,12 +52,11 @@ const Nav = () => {
 				</div>
 			</div>
 			<div className="nav-bar-top">
-				<img
-					className="top-nav-logo"
-					src="https://s3.amazonaws.com/jcwoodworker.portfolio/jc-logo-blue.svg"
-				></img>
+				<h2>JC</h2>
 				<i
-					className={`${threeDotsIcon} menu-icon`}
+					className={`bi bi-three-dots-vertical ${
+						viewNavTopLinks ? "rotated" : ""
+					} menu-icon`}
 					onClick={() => setViewNavTopLinks(!viewNavTopLinks)}
 				></i>
 			</div>
