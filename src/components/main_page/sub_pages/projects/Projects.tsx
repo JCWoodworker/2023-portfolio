@@ -1,12 +1,17 @@
 import "./projects.scss"
 
+import Project1 from "./Project1"
+import Project2 from "./Project2"
+import Project3 from "./Project3"
+import Project4 from "./Project4"
+
 const Projects = () => {
 	return (
 		<div className="projects-container">
-			<div className="project-card"></div>
-			<div className="project-card"></div>
-			<div className="project-card"></div>
-			<div className="project-card"></div>
+			<Project1 />
+			<Project2 />
+			<Project3 />
+			<Project4 />
 		</div>
 	)
 }
