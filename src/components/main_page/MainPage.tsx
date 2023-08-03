@@ -40,9 +40,9 @@ const MainPage = () => {
 					<div className="main-page-child child-fade-in-container medium-gray-bg">
 						<Contact />
 					</div>
-					<div className="main-page-child child-fade-in-container main-page-child-last">
+					{/* <div className="main-page-child child-fade-in-container dark-blue-bg">
 						<Footer />
-					</div>
+					</div> */}
 				</div>
 			)}
 		</>
