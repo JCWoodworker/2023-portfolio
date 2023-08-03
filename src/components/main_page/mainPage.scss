@@ -23,7 +23,7 @@
 }
 
 .main-page-child {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	border-radius: 0.25rem;
 	border-bottom: 1px solid $main-font-color;
@@ -41,10 +41,4 @@
 }
 .medium-gray-bg {
 	background-color: $medium-gray;
-}
-
-@media (max-width: 900px) {
-	.main-page-child {
-		width: 100%;
-	}
 }
