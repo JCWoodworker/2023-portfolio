@@ -13,7 +13,7 @@ const MainPage = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowTitle(false)
-		}, 2500)
+		}, 2000)
 
 		return () => clearTimeout(timer)
 	}, [])
@@ -22,10 +22,8 @@ const MainPage = () => {
 		<>
 			{showTitle && (
 				<div className="main-page-title fade-out">
-					<img
-						src="https://s3.amazonaws.com/jcwoodworker.portfolio/logo_full.svg"
-						className="main-page-logo"
-					/>
+					<h1>James Corey</h1>
+					<p>Web Developer</p>
 				</div>
 			)}
 			{!showTitle && (
@@ -42,7 +40,7 @@ const MainPage = () => {
 					<div className="main-page-child child-fade-in-container medium-gray-bg">
 						<Contact />
 					</div>
-					<div className="main-page-child child-fade-in-container">
+					<div className="main-page-child child-fade-in-container main-page-child-last">
 						<Footer />
 					</div>
 				</div>

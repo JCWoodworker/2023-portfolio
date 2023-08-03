@@ -1,9 +1,9 @@
 import "./projects.scss"
 
-import Project1 from "./Project1"
-import Project2 from "./Project2"
-import Project3 from "./Project3"
-import Project4 from "./Project4"
+import Project1 from "./project_components/Project1"
+import Project2 from "./project_components/Project2"
+import Project3 from "./project_components/Project3"
+import Project4 from "./project_components/Project4"
 
 const Projects = () => {
 	return (
