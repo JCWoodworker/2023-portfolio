@@ -5,7 +5,7 @@ import Home from "./sub_pages/home/Home"
 import Skills from "./sub_pages/skills/Skills"
 import Projects from "./sub_pages/projects/Projects"
 import Contact from "./sub_pages/contact/Contact"
-import Footer from "./sub_pages/footer/Footer"
+// import Footer from "./sub_pages/footer/Footer"
 
 const MainPage = () => {
 	const [showTitle, setShowTitle] = useState(true)
