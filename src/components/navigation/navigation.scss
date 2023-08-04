@@ -5,6 +5,7 @@
 	.nav-container {
 		@include flex-col-center;
 		background-color: $dark-blue;
+		border-right: 5px solid $dark-slate-gray;
 		height: 100vh;
 		position: sticky;
 		top: 0;
@@ -72,6 +73,7 @@
 	}
 	.nav-bar-top {
 		background-color: $dark-blue;
+		border-bottom: 1px solid $main-font-color;
 		padding: 0.5rem;
 		position: fixed;
 		top: 0;
@@ -94,7 +96,7 @@
 		right: 0;
 		width: 45vw;
 		height: 100vh;
-		background-color: $dark-gray-transparent;
+		background-color: $medium-gray-transparent;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;

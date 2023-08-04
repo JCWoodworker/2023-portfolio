@@ -13,8 +13,9 @@ const Nav = () => {
 		navTopLinks = (
 			<div className="nav-top-links">
 				<p className="nav-link-top">Home</p>
-				<p className="nav-link-top">Page 2</p>
-				<p className="nav-link-top">Page 3</p>
+				<p className="nav-link-top">Skills</p>
+				<p className="nav-link-top">Projects</p>
+				<p className="nav-link-top">Contact</p>
 			</div>
 		)
 	} else {
