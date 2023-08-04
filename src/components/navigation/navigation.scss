@@ -1,11 +1,11 @@
-@use "../../assets/styles/index" as *;
+@use "../../assets/base_styles/index.scss" as *;
 
 
 @media (min-width: 1101px) {
 	.nav-container {
 		@include flex-col-center;
 		background-color: $dark-blue;
-		border-right: 5px solid $dark-slate-gray;
+		border-right: 2px solid $main-font-color;
 		height: 100vh;
 		position: sticky;
 		top: 0;

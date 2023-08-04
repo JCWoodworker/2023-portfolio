@@ -1,4 +1,4 @@
-@use "../../../../assets/styles/index" as *;
+@use "../../../../assets/base_styles/index.scss" as *;
 
 .projects-container {
   @include flex-row-wrap-center;
