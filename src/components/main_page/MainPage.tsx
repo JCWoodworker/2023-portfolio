@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import "./mainPage.scss"
 
+import { Spinner } from "react-bootstrap"
+
 import Home from "./sub_pages/home/Home"
 import Skills from "./sub_pages/skills/Skills"
 import Projects from "./sub_pages/projects/Projects"
@@ -23,7 +25,12 @@ const MainPage = () => {
 			{showTitle && (
 				<div className="main-page-title fade-out">
 					<h1>James Corey</h1>
-					<p>Web Developer</p>
+					<p>-Web Developer-</p>
+					<div>
+						<Spinner animation="grow" variant="light" size="sm" />
+						<Spinner animation="grow" variant="light" size="sm" />
+						<Spinner animation="grow" variant="light" size="sm" />
+					</div>
 				</div>
 			)}
 			{!showTitle && (
