@@ -27,7 +27,7 @@
 }
 
 .main-page-child {
-	min-height: 100vh;
+	height: fit-content;
 	width: 100%;
 	border-radius: 0.25rem;
 	@include flex-col-center;
