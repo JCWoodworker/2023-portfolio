@@ -2,7 +2,7 @@ import "./skills.scss"
 
 const Skills: React.FC = () => {
 	return (
-		<div id="skills">
+		<div id="Skills">
 		<div className="skills-page-header">
 			<h1>Skills</h1>
 		</div>

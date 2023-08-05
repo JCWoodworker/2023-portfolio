@@ -3,7 +3,7 @@ import "./contact.scss"
 
 const Contact: React.FC = () => {
 	return (
-		<div id="contact">
+		<div id="Contact">
 			<div className="contact-page-header">
 				<h1>Contact</h1>
 			</div>

@@ -7,7 +7,7 @@ import TopNav from "./top_links/TopNav"
 
 const Nav: React.FC = () => {
 	const [viewNavTopLinks, setViewNavTopLinks] = useState<boolean>(false)
-	const navLinkList: string[] = ["home", "skills", "projects", "contact"]
+	const navLinkList: string[] = ["Background", "Skills", "Projects", "Contact"]
 
 	const scrollToDiv = (divName: string) => {
 		const element = document.getElementById(divName)

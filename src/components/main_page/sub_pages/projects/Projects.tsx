@@ -7,7 +7,7 @@ import Project4 from "./project_components/Project4"
 
 const Projects: React.FC = () => {
 	return (
-		<div id="projects">
+		<div id="Projects">
 			<div className="projects-header">
 				<h1>Projects</h1>
 			</div>

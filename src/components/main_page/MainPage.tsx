@@ -3,7 +3,7 @@ import "./mainPage.scss"
 
 import { Spinner } from "react-bootstrap"
 
-import Home from "./sub_pages/home/Home"
+import Background from "./sub_pages/background/Background"
 import Skills from "./sub_pages/skills/Skills"
 import Projects from "./sub_pages/projects/Projects"
 import Contact from "./sub_pages/contact/Contact"
@@ -35,7 +35,7 @@ const MainPage: React.FC = () => {
 			{!showTitle && (
 				<div className="main-page-grid parent-fade-in-container">
 					<div className="main-page-child child-fade-in-container dark-blue-bg">
-						<Home />
+						<Background />
 					</div>
 					<div className="main-page-child child-fade-in-container medium-gray-bg">
 						<Skills />
