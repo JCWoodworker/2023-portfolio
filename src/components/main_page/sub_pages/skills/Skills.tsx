@@ -1,20 +1,6 @@
 import "./skills.scss"
+import { skillsArray } from "./skillsArray"
 import typedWordAnimation from "../../../../utilities/typedWordAnimation"
-
-type Skills = {
-	[key: string]: string
-}
-
-const skillsObject: Skills = {
-	Languages: "  Javascript - Typescript - Python",
-	Frontend: "  React - Redux - HTML - CSS - Electron",
-	Backend: "  Node.js - Express.js - Nest.js",
-	Database: "  PostgreSQL",
-	Testing: "  Jest - Cypress",
-	Deployment: "  Heroku - AWS - Netlify",
-	Other:
-		"  Agile - Scrum - Jira - Splunk - OOP - TDD - Git - Github - Github Actions - Linux - Windows - Microsoft Office - Google Suite",
-}
 
 const Skills: React.FC = () => {
 	return (
@@ -23,14 +9,10 @@ const Skills: React.FC = () => {
 				<h1>Skills</h1>
 			</div>
 			<div className="skills-page-container">
-				{Object.keys(skillsObject).map((key, index) => {
+				{skillsArray.map((skill, index) => {
 					return (
-						<div key={index} className="skills-page-section">
-							<strong>{typedWordAnimation(key, "skills-page-section-header")}:</strong> 
-							{typedWordAnimation(
-								skillsObject[key],
-								"skills-page-section-body"
-							)}
+						<div key={index}>
+							{typedWordAnimation(skill, "skill-text")}
 						</div>
 					)
 				})}

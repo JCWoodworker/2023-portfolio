@@ -7,6 +7,6 @@
 }
 
 .skills-page-container {
-  @include flex-col-center;
+  @include flex-row-wrap-center;
   margin: 1rem;
 }

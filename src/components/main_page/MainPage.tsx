@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import "./mainPage.scss"
+import { scrollToDiv } from "../../utilities/scrollToDiv"
 
 import { Spinner } from "react-bootstrap"
 
@@ -15,9 +16,16 @@ const MainPage: React.FC = () => {
 		const timer = setTimeout(() => {
 			setShowTitle(false)
 		}, 2000)
-
 		return () => clearTimeout(timer)
 	}, [])
+
+	useEffect(() => {
+		if (!showTitle) {
+			setTimeout(() => {
+				scrollToDiv('Background', true) 
+			}, 0)
+		}
+	}, [showTitle])
 
 	return (
 		<>

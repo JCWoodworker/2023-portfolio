@@ -7,5 +7,10 @@
 }
 
 .background-page-container {
+	@include flex-col-center;
 	margin: 1rem;
+}
+
+#grubhub {
+	color: orange
 }

@@ -1,14 +1,13 @@
 import "./top_nav.scss"
+import { scrollToDiv } from "../../../utilities/scrollToDiv"
 
 interface TopNavProps {
-	scrollToDiv: (id: string) => void
 	viewNavTopLinks: boolean
 	setViewNavTopLinks: React.Dispatch<React.SetStateAction<boolean>>
 	navLinkList: string[]
 }
 
 const TopNav: React.FC<TopNavProps> = ({
-	scrollToDiv,
 	viewNavTopLinks,
 	setViewNavTopLinks,
 	navLinkList,
@@ -23,7 +22,7 @@ const TopNav: React.FC<TopNavProps> = ({
 						<p
 							className="nav-link-top"
 							key={link}
-							onClick={() => scrollToDiv(link)}
+							onClick={() => scrollToDiv(link, viewNavTopLinks, setViewNavTopLinks)}
 						>
 							{link}
 						</p>

@@ -1,11 +1,12 @@
 import "./side_nav.scss"
 import typedWordAnimation from "../../../utilities/typedWordAnimation"
+import { scrollToDiv } from "../../../utilities/scrollToDiv"
 interface SideNavProps {
-	scrollToDiv: (id: string) => void
+	// scrollToDiv: (id: string) => void
 	navLinkList: string[]
 }
 
-const SideNav: React.FC<SideNavProps> = ({ scrollToDiv, navLinkList }) => {
+const SideNav: React.FC<SideNavProps> = ({ navLinkList }) => {
 
 	const fullName = typedWordAnimation("James Corey", "nav-title-name")
 
