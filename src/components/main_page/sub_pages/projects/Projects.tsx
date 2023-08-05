@@ -7,12 +7,17 @@ import Project4 from "./project_components/Project4"
 
 const Projects = () => {
 	return (
-		<div className="projects-container">
-			<Project1 />
-			<Project2 />
-			<Project3 />
-			<Project4 />
-		</div>
+		<>
+			<div className="projects-header">
+				<h1>Projects</h1>
+			</div>
+			<div className="projects-container">
+				<Project1 />
+				<Project2 />
+				<Project3 />
+				<Project4 />
+			</div>
+		</>
 	)
 }
 

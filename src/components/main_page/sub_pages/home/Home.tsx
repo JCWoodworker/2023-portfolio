@@ -1,7 +1,13 @@
+import "./home.scss"
+
 const Home = () => {
 	return (
 		<>
-			<h1>Home</h1>
+			<div className="home-page-header">
+				<h1>Home</h1>
+			</div>
+			<div className="home-page-container">
+			</div>
 		</>
 	)
 }

@@ -3,10 +3,14 @@ import "./contact.scss"
 
 const Contact = () => {
 	return (
-		<div className="contact-page-container">
-			<h1>Contact</h1>
-			<ContactForm />
-		</div>
+		<>
+			<div className="contact-page-header">
+				<h1>Contact</h1>
+			</div>
+			<div className="contact-page-container">
+				<ContactForm />
+			</div>
+		</>
 	)
 }
 

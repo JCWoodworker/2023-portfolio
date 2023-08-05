@@ -1,0 +1,11 @@
+@use "../../../../assets/base_styles/index.scss" as *;
+
+.home-page-header {
+  padding: 1rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid $main-font-color;
+}
+
+.home-page-container {
+  margin: 1rem;
+}

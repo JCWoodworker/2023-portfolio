@@ -1,5 +1,11 @@
 @use "../../../../assets/base_styles/index.scss" as *;
 
+.contact-page-header {
+  padding: 1rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid $main-font-color;
+}
+
 .contact-page-container {
 	@include flex-col-center;
 	padding: 1rem;
