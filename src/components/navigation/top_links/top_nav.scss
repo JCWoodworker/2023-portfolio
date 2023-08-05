@@ -11,9 +11,9 @@
 
 @media (max-width: 1100px) {
 	.nav-bar-top {
-		background-color: $dark-blue;
-		border-bottom: 1px solid $main-font-color;
 		padding: 0.5rem;
+		background-color: $medium-gray;
+		border-bottom: 1px solid $main-font-color;
 		position: fixed;
 		top: 0;
 		width: 100%;
