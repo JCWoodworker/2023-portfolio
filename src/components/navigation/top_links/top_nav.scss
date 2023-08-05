@@ -4,7 +4,7 @@
 	.nav-bar-top {
 		display: none;
 	}
-	.nav-top-links {
+	.nav-top-links-container {
 		display: none;
 	}
 }
@@ -27,7 +27,7 @@
 			margin-left: 1rem;
 		}
 	}
-	.nav-top-links {
+	.nav-top-links-container {
 		z-index: 1;
 		padding: 0.5rem;
 		padding-top: 8rem;
@@ -55,7 +55,7 @@
 	}
 }
 @media (max-width: 900px) {
-	.nav-top-links {
+	.nav-top-links-container {
 		width: 100vw;
 	}
 }

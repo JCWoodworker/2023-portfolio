@@ -1,29 +1,34 @@
 import "./top_nav.scss"
 
 interface TopNavProps {
-  scrollToDiv: (id: string) => void;
-  viewNavTopLinks: boolean;
-  setViewNavTopLinks: React.Dispatch<React.SetStateAction<boolean>>;
+	scrollToDiv: (id: string) => void
+	viewNavTopLinks: boolean
+	setViewNavTopLinks: React.Dispatch<React.SetStateAction<boolean>>
+	navLinkList: string[]
 }
 
-const TopNav: React.FC<TopNavProps> = ({ scrollToDiv, viewNavTopLinks, setViewNavTopLinks }) => {
+const TopNav: React.FC<TopNavProps> = ({
+	scrollToDiv,
+	viewNavTopLinks,
+	setViewNavTopLinks,
+	navLinkList,
+}) => {
 	let navTopLinks = null
 
 	if (viewNavTopLinks) {
 		navTopLinks = (
-			<div className="nav-top-links">
-				<p className="nav-link-top" onClick={() => scrollToDiv("home")}>
-					Home
-				</p>
-				<p className="nav-link-top" onClick={() => scrollToDiv("skills")}>
-					Skills
-				</p>
-				<p className="nav-link-top" onClick={() => scrollToDiv("projects")}>
-					Projects
-				</p>
-				<p className="nav-link-top" onClick={() => scrollToDiv("contact")}>
-					Contact
-				</p>
+			<div className="nav-top-links-container">
+				{navLinkList.map((link) => {
+					return (
+						<p
+							className="nav-link-top"
+							key={link}
+							onClick={() => scrollToDiv(link)}
+						>
+							{link}
+						</p>
+					)
+				})}
 			</div>
 		)
 	} else {
