@@ -1,3 +1,4 @@
+import React from "react"
 import "./top_nav.scss"
 
 interface TopNavProps {
