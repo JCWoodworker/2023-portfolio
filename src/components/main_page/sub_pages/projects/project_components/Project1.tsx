@@ -5,6 +5,9 @@ const Project1: React.FC = () => {
 				<h1>Woodworker's Project Manager</h1>
 				<p>React - Node - Express - PostgreSQL</p>
 				<p>Deployed with Heroku</p>
+				<p>
+					Sandbox Logins: user1@test.com or admin@test.com - Passwords for both are "test"{" "}
+				</p>
 			</a>
 		</div>
 	)

@@ -59,6 +59,7 @@ const ContactForm: React.FC = () => {
 						<Form.Group controlId="formBasicEmail">
 							<Form.Label>Email address</Form.Label>
 							<Form.Control
+								className="form-text-input"
 								type="email"
 								placeholder="Enter your email"
 								value={formData.email}
@@ -69,6 +70,7 @@ const ContactForm: React.FC = () => {
 						<Form.Group controlId="formBasicFirstName">
 							<Form.Label>First Name</Form.Label>
 							<Form.Control
+								className="form-text-input"
 								type="text"
 								placeholder="Enter your first name"
 								value={formData.firstName}

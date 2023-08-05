@@ -38,7 +38,7 @@ h2 {
 		transform: translateY(-10px);
 		animation: fadeInUp 0.2s forwards;
 
-		@for $i from 1 through 20 {
+		@for $i from 1 through 200 {
 			&:nth-child(#{$i}) {
 				animation-delay: 0.1s * $i;
 			}
