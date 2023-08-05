@@ -36,11 +36,11 @@ h2 {
 		display: inline-block;
 		opacity: 0;
 		transform: translateY(-10px);
-		animation: fadeInUp 0.2s forwards;
+		animation: fadeInUp 0.05s forwards;
 
 		@for $i from 1 through 200 {
 			&:nth-child(#{$i}) {
-				animation-delay: 0.1s * $i;
+				animation-delay: 0.05s * $i;
 			}
 		}
 	}
