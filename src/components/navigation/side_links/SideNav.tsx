@@ -1,10 +1,13 @@
 import "./side_nav.scss"
+import typedWordAnimation from "../../../utilities/typedWordAnimation"
 interface SideNavProps {
-  scrollToDiv: (id: string) => void;
-	navLinkList: string[];
+	scrollToDiv: (id: string) => void
+	navLinkList: string[]
 }
 
 const SideNav: React.FC<SideNavProps> = ({ scrollToDiv, navLinkList }) => {
+
+	const fullName = typedWordAnimation("James Corey", "nav-title-name")
 
 	return (
 		<div className="nav-bar-side  ">
@@ -16,12 +19,16 @@ const SideNav: React.FC<SideNavProps> = ({ scrollToDiv, navLinkList }) => {
 						loading="lazy"
 					></img>
 				</div>
-				<h2 className="nav-title-name">James Corey</h2>
+				{fullName}
 			</div>
 			<div className="nav-side-links-container">
 				{navLinkList.map((link) => {
 					return (
-						<p className="nav-link" key={link} onClick={() => scrollToDiv(link)}>
+						<p
+							className="nav-link"
+							key={link}
+							onClick={() => scrollToDiv(link)}
+						>
 							{link}
 						</p>
 					)

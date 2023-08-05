@@ -25,17 +25,25 @@
 		font-family: $script-font;
 		font-size: 3rem;
 	}
+	p {
+		padding: 0 2.5rem
+	}
   a {
     @include flex-col-center;
     height: 100%;
     width: 100%;
     transition: color 0.5s;
-    &:hover {
-      transform: scale(1.05);
+    
+  }
+	transition: background-color 0.5s;
+	&:hover {
+		background-color: $dark-blue;
+		a {
+			transform: scale(1.2);
       transition: transform 0.5s;
       cursor: pointer;
-    }
-  }
+		}
+	}
 }
 
 .project-1 {
