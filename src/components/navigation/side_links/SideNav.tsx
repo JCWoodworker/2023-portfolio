@@ -7,7 +7,6 @@ interface SideNavProps {
 }
 
 const SideNav: React.FC<SideNavProps> = ({ navLinkList }) => {
-
 	const fullName = typedWordAnimation("James Corey", "nav-title-name")
 
 	return (
@@ -37,8 +36,12 @@ const SideNav: React.FC<SideNavProps> = ({ navLinkList }) => {
 			</div>
 			<div className="nav-side-links-spacer"></div>
 			<div className="nav-social-media-icons">
-				<i className="bi bi-linkedin"></i>
-				<i className="bi bi-github"></i>
+				<a href="https://www.linkedin.com/in/j-corey/" target="_blank">
+					<i className="bi bi-linkedin"></i>
+				</a>
+				<a href="https://github.com/JCWoodworker" target="_blank">
+					<i className="bi bi-github"></i>
+				</a>
 			</div>
 		</div>
 	)
