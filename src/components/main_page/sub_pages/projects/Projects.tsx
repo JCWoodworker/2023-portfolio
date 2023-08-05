@@ -5,9 +5,9 @@ import Project2 from "./project_components/Project2"
 import Project3 from "./project_components/Project3"
 import Project4 from "./project_components/Project4"
 
-const Projects = () => {
+const Projects: React.FC = () => {
 	return (
-		<>
+		<div id="projects">
 			<div className="projects-header">
 				<h1>Projects</h1>
 			</div>
@@ -17,7 +17,7 @@ const Projects = () => {
 				<Project3 />
 				<Project4 />
 			</div>
-		</>
+		</div>
 	)
 }
 

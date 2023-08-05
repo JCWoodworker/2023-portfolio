@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap"
 import emailjs from "emailjs-com"
 import Swal from "sweetalert2"
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
 	const [formData, setFormData] = useState({
 		email: "",
 		firstName: "",

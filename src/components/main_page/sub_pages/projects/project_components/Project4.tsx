@@ -1,4 +1,4 @@
-const Project4 = () => {
+const Project4: React.FC = () => {
 	return (
 		<div className="project-card project-4">
 			<a href="https://bizlinks.netlify.app/" target="_blank">

@@ -7,9 +7,8 @@ import Home from "./sub_pages/home/Home"
 import Skills from "./sub_pages/skills/Skills"
 import Projects from "./sub_pages/projects/Projects"
 import Contact from "./sub_pages/contact/Contact"
-// import Footer from "./sub_pages/footer/Footer"
 
-const MainPage = () => {
+const MainPage: React.FC = () => {
 	const [showTitle, setShowTitle] = useState(true)
 
 	useEffect(() => {
@@ -47,9 +46,6 @@ const MainPage = () => {
 					<div className="main-page-child child-fade-in-container medium-gray-bg">
 						<Contact />
 					</div>
-					{/* <div className="main-page-child child-fade-in-container dark-blue-bg">
-						<Footer />
-					</div> */}
 				</div>
 			)}
 		</>

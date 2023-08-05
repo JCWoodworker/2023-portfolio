@@ -1,4 +1,4 @@
-const Project2 = () => {
+const Project2: React.FC = () => {
 	return (
 		<div className="project-card project-2">
 			<a href="https://www.rilocalwoodworks.com/" target="_blank">

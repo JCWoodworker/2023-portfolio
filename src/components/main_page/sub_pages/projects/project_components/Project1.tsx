@@ -1,4 +1,4 @@
-const Project1 = () => {
+const Project1: React.FC = () => {
 	return (
 		<div className="project-card project-1">
 			<a href="https://woodworking-project-calc.herokuapp.com/" target="_blank">

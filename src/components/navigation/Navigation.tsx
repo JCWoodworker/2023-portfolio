@@ -1,25 +1,25 @@
 import { useState } from "react"
 
 import "./navigation.scss"
-
 import typedWordAnimation from "../../utilities/typedWordAnimation"
 
-const Nav = () => {
+// import SideNav from "./side_links/SideNav"
+import TopNav from "./top_links/TopNav"
+
+const Nav: React.FC = () => {
 	const [viewNavTopLinks, setViewNavTopLinks] = useState(false)
 
-	let navTopLinks = null
-
-	if (viewNavTopLinks) {
-		navTopLinks = (
-			<div className="nav-top-links">
-				<p className="nav-link-top">Home</p>
-				<p className="nav-link-top">Skills</p>
-				<p className="nav-link-top">Projects</p>
-				<p className="nav-link-top">Contact</p>
-			</div>
-		)
-	} else {
-		navTopLinks = null
+	const scrollToDiv = (divName: string) => {
+		const element = document.getElementById(divName)
+		if (viewNavTopLinks && element !== null) {
+			const yOffset = -66
+			const y = element.getBoundingClientRect().top + window.scrollY + yOffset
+			window.scrollTo({ top: y, behavior: "smooth" })
+			setViewNavTopLinks(false)
+			return true
+		}
+		element?.scrollIntoView({ behavior: "smooth", block: "start" })
+		setViewNavTopLinks(false)
 	}
 
 	const navLinkHome = typedWordAnimation("Home", "nav-link")
@@ -41,10 +41,18 @@ const Nav = () => {
 					<h2 className="nav-title-name">James Corey</h2>
 				</div>
 				<div className="nav-side-links-container">
-					<p className="nav-link">{navLinkHome}</p>
-					<p className="nav-link">{navLinkProjects}</p>
-					<p className="nav-link">{navLinkSkills}</p>
-					<p className="nav-link">{navLinkContact}</p>
+					<p className="nav-link" onClick={() => scrollToDiv("home")}>
+						{navLinkHome}
+					</p>
+					<p className="nav-link" onClick={() => scrollToDiv("skills")}>
+						{navLinkSkills}
+					</p>
+					<p className="nav-link" onClick={() => scrollToDiv("projects")}>
+						{navLinkProjects}
+					</p>
+					<p className="nav-link" onClick={() => scrollToDiv("contact")}>
+						{navLinkContact}
+					</p>
 				</div>
 				<div className="nav-side-links-spacer"></div>
 				<div className="nav-social-media-icons">
@@ -52,16 +60,11 @@ const Nav = () => {
 					<i className="bi bi-github"></i>
 				</div>
 			</div>
-			<div className="nav-bar-top">
-				<h2>JC</h2>
-				<i
-					className={`bi bi-three-dots-vertical ${
-						viewNavTopLinks ? "rotated" : ""
-					} menu-icon`}
-					onClick={() => setViewNavTopLinks(!viewNavTopLinks)}
-				></i>
-			</div>
-			{navTopLinks}
+			<TopNav
+				scrollToDiv={scrollToDiv}
+				viewNavTopLinks={viewNavTopLinks}
+				setViewNavTopLinks={setViewNavTopLinks}
+			/>
 		</>
 	)
 }

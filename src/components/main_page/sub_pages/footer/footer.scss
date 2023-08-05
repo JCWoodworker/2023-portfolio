@@ -1,6 +1,0 @@
-@use "../../../../assets/base_styles/index.scss" as *;
-
-.footer-container {
-  padding: 1rem;
-  @include flex-row-wrap-center;
-}

@@ -1,14 +1,14 @@
 import "./skills.scss"
 
-const Skills = () => {
+const Skills: React.FC = () => {
 	return (
-		<>
+		<div id="skills">
 		<div className="skills-page-header">
 			<h1>Skills</h1>
 		</div>
 		<div className="skills-page-container">
 		</div>
-	</>
+	</div>
 	)
 }
 
