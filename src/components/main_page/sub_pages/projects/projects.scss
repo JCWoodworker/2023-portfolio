@@ -31,16 +31,16 @@
 	}
   a {
     @include flex-col-center;
-    height: 100%;
-    width: 100%;
   }
-	transition: background-color 0.5s;
+	transition: background-color 0.5s border-bottom 0.5s;
 	&:hover {
 		background-color: $dark-blue;
 		a {
 			transform: scale(1.2);
       transition: transform 0.5s;
+			border-bottom: 1px solid $medium-gray;
       cursor: pointer;
+			color: yellow;
 		}
 	}
 }

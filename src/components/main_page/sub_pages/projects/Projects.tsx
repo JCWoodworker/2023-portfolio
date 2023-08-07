@@ -1,9 +1,5 @@
 import "./projects.scss"
-
-import Project1 from "./project_components/Project1"
-import Project2 from "./project_components/Project2"
-import Project3 from "./project_components/Project3"
-import Project4 from "./project_components/Project4"
+import { projectsList } from "./projectsList"
 
 const Projects: React.FC = () => {
 	return (
@@ -12,10 +8,16 @@ const Projects: React.FC = () => {
 				<h1>Projects</h1>
 			</div>
 			<div className="projects-container">
-				<Project1 />
-				<Project2 />
-				<Project3 />
-				<Project4 />
+				{projectsList.map((project, index) => {
+						return (
+							<div className={`project-card project-${index + 1}`}>
+								<h1>{project.name}</h1>
+								<p>{project.description}</p>
+								<a href={project.link} target="_blank">Click here to see it in action!</a>
+							</div>
+						)
+					})
+				}
 			</div>
 		</div>
 	)
