@@ -1,10 +1,10 @@
-@use "../../../../assets/base_styles/index.scss" as *;
+@use "../../../../assets/base_stylesheets/index.scss" as *;
 
 .projects-header {
 	margin-top: 0.5rem;
-  padding: 1rem;
-  padding-bottom: 0;
-  border-bottom: 1px solid $medium-gray;
+	padding: 1rem;
+	padding-bottom: 0;
+	border-bottom: 1px solid $medium-gray;
 }
 
 .projects-container {
@@ -15,45 +15,49 @@
 }
 
 .project-card {
+	@media (min-width: 900px) {
+		width: 365px;
+		min-height: 365px;
+	}
+	@media (max-width: 900px) {
+		width: 360px;
+		height: 360px;
+	}
 	@include flex-col-center;
 	padding: 1rem;
 	border-radius: 0.25rem;
-	width: 48%;
-	height: 40%;
-	min-width: 350px;
-	min-height: 350px;
 	h1 {
 		font-family: $script-font;
 		font-size: 3rem;
+		width: 100%;
 	}
 	p {
-		padding: 0 2.5rem
+		display: none;
+		padding: 0 2.5rem;
 	}
-  a {
-    @include flex-col-center;
-  }
+	a {
+		@include flex-col-center;
+	}
 	transition: background-color 0.5s border-bottom 0.5s;
 	&:hover {
 		background-color: $dark-blue;
 		a {
 			transform: scale(1.2);
-      transition: transform 0.5s;
+			transition: transform 0.5s;
 			border-bottom: 1px solid $medium-gray;
-      cursor: pointer;
+			cursor: pointer;
 			color: yellow;
 		}
+		h1 {
+			font-size: 2rem;
+		}
+		p {
+			display: block;
+		}
 	}
-}
-
-.project-1 {
-	background-color: rgba(255, 165, 0, 0.4);
-}
-.project-2 {
-	background-color: rgba(50, 205, 50, 0.4);
-}
-.project-3 {
-	background-color: rgba(255, 255, 0, 0.4);
-}
-.project-4 {
-	background-color: rgba(0, 255, 255, 0.4);
+	@for $i from 1 through 99 {
+		&.project-#{$i} {
+			background-color: rgba(random(255), random(255), random(255), 0.4);
+		}
+	}
 }
