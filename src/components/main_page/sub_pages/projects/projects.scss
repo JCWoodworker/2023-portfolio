@@ -24,6 +24,7 @@
 		height: 360px;
 	}
 	@include flex-col-center;
+	margin: 1rem;
 	padding: 1rem;
 	border-radius: 0.25rem;
 	h1 {
@@ -31,7 +32,7 @@
 		font-size: 3rem;
 		width: 100%;
 	}
-	p {
+	.project-skills-display {
 		display: none;
 		padding: 0 2.5rem;
 	}
@@ -51,8 +52,10 @@
 		h1 {
 			font-size: 2rem;
 		}
-		p {
-			display: block;
+		.project-skills-display {
+			padding: 1rem;
+			border-radius: 2rem;
+			@include flex-row-wrap-center;
 		}
 	}
 	@for $i from 1 through 99 {

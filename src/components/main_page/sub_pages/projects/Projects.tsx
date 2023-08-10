@@ -15,18 +15,16 @@ const Projects: React.FC = () => {
 			title: h1Element?.innerText || "",
 			information: aElement?.innerText || "",
 		})
-		h1Element? h1Element.innerText = "Skills & Deployment" : ""
-		aElement? aElement.innerText = "Click Here to View Site!" : ""
-		console.log(project, "mouse enter")
-		}
-	
+		h1Element ? (h1Element.innerText = "Skills & Deployment:") : ""
+		aElement ? (aElement.innerText = "Click Here to View Site!") : ""
+	}
+
 	const onMouseLeaveHandler = (e: React.MouseEvent) => {
 		const project = e.currentTarget
 		const h1Element = project.querySelector("h1")
 		const aElement = project.querySelector("a")
-		h1Element? h1Element.innerText = currentTile.title : ""
-		aElement? aElement.innerText = currentTile.information : ""
-		console.log(project, "mouse leave")
+		h1Element ? (h1Element.innerText = currentTile.title) : ""
+		aElement ? (aElement.innerText = currentTile.information) : ""
 	}
 
 	return (
@@ -44,7 +42,15 @@ const Projects: React.FC = () => {
 							onMouseLeave={onMouseLeaveHandler}
 						>
 							<h1>{project.name}</h1>
-							<p>{project.description}</p>
+							<div className="project-skills-display">
+							{project.skills.map((skill, index) => {
+								return (
+									<p key={index} className="skill">
+										{skill}
+									</p>
+								)
+							})}
+							</div>
 							<a href={project.link} target="_blank">
 								Hover/Long Press For More Info
 							</a>

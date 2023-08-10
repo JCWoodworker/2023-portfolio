@@ -14,14 +14,14 @@ export const projectsList: Project[] = [
 	{
 		name: "Woodworker's Project Manager",
 		link: "https://woodworking-project-calc.herokuapp.com/",
-		skills: ["Javascript", "React", "Node", "Express", "SCSS", "PostgreSQL"],
+		skills: ["Javascript", "React", "Node", "Express", "SCSS", "PostgreSQL", "Heroku", "Git", "Github"],
 		deployment: "Heroku",
 		description: "Some shit here",
 	},
 	{
 		name: "Business Link List",
 		link: "https://bizlinks.netlify.app/",
-		skills: ["Typescript", "React", "SCSS"],
+		skills: ["Typescript", "React", "SCSS", "Netlify", "Git", "Github"],
 		deployment: "",
 		description: "Some shit here",
 	},
@@ -38,5 +38,5 @@ export const projectsList: Project[] = [
 	// 	skills: [],
 	// 	deployment: "",
 	// 	description: "",
-	// },
+	// }
 ]
