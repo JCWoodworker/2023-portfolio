@@ -4,7 +4,7 @@
 	margin-top: 0.5rem;
 	padding: 1rem;
 	padding-bottom: 0;
-	border-bottom: 1px solid $medium-gray;
+	text-decoration: underline;
 }
 
 .projects-container {
@@ -18,7 +18,7 @@
 	@include flex-col-center;
 	margin: 1rem;
 	padding: 1rem;
-	border-radius: 0.25rem;
+	border-radius: 1rem;
 	h1 {
 		font-family: $script-font;
 		font-size: 3rem;
