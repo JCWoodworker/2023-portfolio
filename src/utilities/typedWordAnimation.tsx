@@ -1,4 +1,4 @@
-const typedWordAnimation = (inputString: string, className: string) => {
+const typedWordAnimation = (inputString: string, classNames: string) => {
   const jsxString = inputString.split('').map((char, index) => {
     if (char === ' ') {
       return <span key={index}>&nbsp;</span>;
@@ -7,7 +7,7 @@ const typedWordAnimation = (inputString: string, className: string) => {
   });
 
   return (
-    <p className={className}>
+    <p className={classNames}>
       {jsxString}
     </p>
   );
