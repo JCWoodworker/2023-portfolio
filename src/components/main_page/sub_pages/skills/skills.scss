@@ -1,11 +1,5 @@
 @use "../../../../assets/base_stylesheets/index.scss" as *;
 
-.skills-page-header {
-  padding: 1rem;
-  padding-bottom: 0;
-  text-decoration: underline;
-}
-
 .skills-page-container {
   @include flex-row-wrap-center;
   margin: 1rem;

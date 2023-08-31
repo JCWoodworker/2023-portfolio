@@ -5,13 +5,13 @@
 		@include flex-col-center;
 		padding-top: 5rem;
 		height: 100vh;
-		background-color: $dark-blue;
+		width: 100%;
+		background-color: $dark-slate-gray;
 	}
 	.nav-side-links-container {
 		margin-top: 5rem;
 	}
 	.nav-link {
-		
 		font-size: 1.5rem;
 		text-decoration: none;
 		border-bottom: 2px solid transparent;
@@ -32,6 +32,8 @@
 		border: 3px solid $main-font-color;
 		object-position: center;
 		object-fit: cover;
+		opacity: 0;
+		animation: fadeIn 2s forwards;
 	}
 
 	.nav-title-name {
@@ -51,6 +53,8 @@
 		width: 100%;
 		gap: 1rem;
 		font-size: 25px;
+		opacity: 0;
+		animation: fadeIn 2s forwards;
 	}
 }
 @media (max-width: 1100px) {

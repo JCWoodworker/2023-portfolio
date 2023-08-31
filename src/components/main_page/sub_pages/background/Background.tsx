@@ -3,8 +3,8 @@ import "./background.scss"
 const Home: React.FC = () => {
 	return (
 		<div id="Background">
-			<div className="background-page-header">
-				<h1>About Me</h1>
+			<div className="sub-page-header-div">
+				<h1 className="sub-page-h1">About Me</h1>
 			</div>
 			<div className="background-page-container">
 				<p>Software Engineer | Woodworker | Father to a son and three dogs</p>
