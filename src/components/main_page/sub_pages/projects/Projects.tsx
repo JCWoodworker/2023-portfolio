@@ -29,8 +29,8 @@ const Projects: React.FC = () => {
 
 	return (
 		<div id="Projects">
-			<div className="projects-header">
-				<h1>Projects</h1>
+			<div className="sub-page-header-div">
+				<h1 className="sub-page-h1">Projects</h1>
 			</div>
 			<div className="projects-container">
 				{projectsList.map((project, index) => {

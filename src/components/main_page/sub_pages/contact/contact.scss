@@ -1,12 +1,5 @@
 @use "../../../../assets/base_stylesheets/index.scss" as *;
 
-.contact-page-header {
-	margin-top: 0.5rem;
-	padding: 1rem;
-	padding-bottom: 0;
-	text-decoration: underline;
-}
-
 .contact-page-container {
 	@include flex-col-center;
 	padding: 1rem;

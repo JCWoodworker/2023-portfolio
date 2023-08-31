@@ -17,6 +17,16 @@ a {
 	color: inherit;
 }
 
+.sub-page-header-div {
+	margin-top: 0.5rem;
+	padding: 1rem;
+	padding-bottom: 0;
+}
+
+.sub-page-h1 {
+	font-family: $script-font;
+}
+
 @media (min-width: 1101px) {
 	.app-container {
 		display: grid;
@@ -32,3 +42,4 @@ a {
 		align-items: start;
 	}
 }
+

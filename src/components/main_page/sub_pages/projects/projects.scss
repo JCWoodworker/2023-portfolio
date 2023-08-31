@@ -1,12 +1,5 @@
 @use "../../../../assets/base_stylesheets/index.scss" as *;
 
-.projects-header {
-	margin-top: 0.5rem;
-	padding: 1rem;
-	padding-bottom: 0;
-	text-decoration: underline;
-}
-
 .projects-container {
 	@include flex-row-wrap-center;
 	padding: 1rem;

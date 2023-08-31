@@ -5,8 +5,8 @@ import typedWordAnimation from "../../../../utilities/typedWordAnimation"
 const Skills: React.FC = () => {
 	return (
 		<div id="Skills">
-			<div className="skills-page-header">
-				<h1>Skills</h1>
+			<div className="sub-page-header-div">
+				<h1 className="sub-page-h1">Skills</h1>
 			</div>
 			<div className="skills-page-container">
 				{skillsArray.map((skill, index) => {
