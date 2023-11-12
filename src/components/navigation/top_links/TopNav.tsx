@@ -37,7 +37,7 @@ const TopNav: React.FC<TopNavProps> = ({
 	return (
 		<>
 			<div className="nav-bar-top">
-				<h2>JC</h2>
+				<h2>James Corey</h2>
 				<i
 					className={`bi bi-three-dots-vertical ${
 						viewNavTopLinks ? "rotated" : ""
