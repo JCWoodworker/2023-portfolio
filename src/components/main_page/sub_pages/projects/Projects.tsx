@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
 			information: aElement?.innerText || "",
 		})
 		h1Element ? (h1Element.innerText = "Skills & Deployment:") : ""
-		aElement ? (aElement.innerText = "Click Here to View Site!") : ""
+		aElement ? (aElement.innerText = "Live Site!") : ""
 	}
 
 	const onMouseLeaveHandler = (e: React.MouseEvent) => {
