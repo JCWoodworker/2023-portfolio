@@ -2,7 +2,6 @@ import "./side_nav.scss"
 import typedWordAnimation from "../../../utilities/typedWordAnimation"
 import { scrollToDiv } from "../../../utilities/scrollToDiv"
 interface SideNavProps {
-	// scrollToDiv: (id: string) => void
 	navLinkList: string[]
 }
 
@@ -37,10 +36,10 @@ const SideNav: React.FC<SideNavProps> = ({ navLinkList }) => {
 			<div className="nav-side-links-spacer"></div>
 			<div className="nav-social-media-icons">
 				<a href="https://www.linkedin.com/in/j-corey/" target="_blank">
-					<i className="bi bi-linkedin"></i>
+					<i className="bi bi-linkedin social-icon"></i>
 				</a>
 				<a href="https://github.com/JCWoodworker" target="_blank">
-					<i className="bi bi-github"></i>
+					<i className="bi bi-github social-icon"></i>
 				</a>
 			</div>
 		</div>

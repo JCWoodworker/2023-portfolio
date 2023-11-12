@@ -1,12 +1,14 @@
 $main-font-color: rgb(243, 243, 243);
+$black: rgb(0, 0, 0);
 
 $medium-gray: rgb(67, 67, 67);
-$medium-gray-transparent: rgba(67, 67, 67, 0.94);
+$medium-gray-transparent: rgba(67, 67, 67, 0.3);
 $dark-gray: rgb(30, 30, 30);
 $dark-gray-transparent: rgba(30, 30, 30, 0.94);
 
 $medium-blue: rgb(70, 70, 106);
 $dark-blue: rgb(18, 18, 30);
+$dark-blue-transparent: rgba(18, 18, 30, 0.8);
 $dark-blue-gradient: linear-gradient(to bottom right, rgb(18, 18, 30), rgb(70, 70, 106));
 
 $dark-slate-gray: rgb(38, 73, 73);
@@ -14,5 +16,7 @@ $slate-gray-gradient: linear-gradient(to bottom left, rgb(10, 30, 30), rgb(150, 
 
 $navigation-background: $dark-blue-gradient;
 
-$odd-sections-background: $dark-blue-gradient;
-$even-sections-background: $medium-gray-transparent;  
+$yellow-orange: rgba(255, 206, 82, 0.50);
+
+$odd-sections-background: none;
+$even-sections-background: $yellow-orange;  
