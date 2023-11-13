@@ -1,11 +1,41 @@
 @use "../../../../assets/base_stylesheets/index.scss" as *;
 
 .skills-page-container {
-  @include flex-row-wrap-center;
-  margin: 1rem;
-  padding-top: 1rem;
+	@include flex-row-wrap-center;
+	margin: 1rem;
+	padding-top: 1rem;
 }
 
-.highlighted-skills {
-  color: $highlighted-skills-color;
+.skill-level-key {
+	@include flex-row-wrap-center;
+	gap: 1rem;
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	li {
+		font-size: 1rem;
+		font-weight: bolder;
+		&:nth-child(1) {
+			color: $bold-skill-color;
+      background-color: $highlighted-skill-background;
+      padding: 0.1rem 0.4rem;
+      border-radius: 0.5rem;
+		}
+		&:nth-child(2) {
+			color: $bold-skill-color;
+		}
+		&:nth-child(3) {
+			color: $main-font-color;
+		}
+	}
+}
+
+.bold-skill {
+	color: $bold-skill-color;
+}
+
+.highlighted-skill {
+	background-color: $highlighted-skill-background;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.5rem;
 }
