@@ -7,9 +7,9 @@
 body {
 	margin: 0;
 	text-align: center;
-	color: $main-font-color;
+	color: $backup-font-color;
 	background-image: $dark-blue-gradient;
-	font-family: $main-font
+	font-family: $backup-font;
 }
 
 a {
@@ -24,7 +24,7 @@ a {
 }
 
 .sub-page-h1 {
-	font-family: $script-font;
+	font-family: $backup-font;
 }
 
 @media (min-width: 1101px) {

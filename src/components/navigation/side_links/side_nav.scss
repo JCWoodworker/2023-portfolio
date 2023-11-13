@@ -17,7 +17,7 @@
 		transition: border-bottom 1s;
 		&:hover {
 			cursor: pointer;
-			border-bottom: 2px solid $main-font-color;
+			border-bottom: 2px solid $backup-font-color;
 		}
 	}
 
@@ -28,7 +28,7 @@
 		width: 180px;
 		height: 180px;
 		border-radius: 50%;
-		border: 3px solid $main-font-color;
+		border: 3px solid $backup-font-color;
 		object-position: center;
 		object-fit: cover;
 		opacity: 0;
@@ -59,7 +59,7 @@
 
 .social-icon {
 	font-size: 2.3rem;
-	color: $main-font-color;
+	color: $backup-font-color;
 	cursor: pointer;
 	transition: color 0.5s;
 	transition: border-bottom 0.5s;

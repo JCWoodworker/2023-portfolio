@@ -11,9 +11,9 @@
 
 @media (max-width: 1100px) {
 	.nav-bar-top {
-		font-family: $script-font;
+		font-family: $backup-font;
 		padding: 0.5rem;
-		border-bottom: 1px solid $main-font-color;
+		border-bottom: 1px solid $backup-font-color;
 		background-image: $dark-blue-gradient;
 		position: fixed;
 		top: 0;
