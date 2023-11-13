@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
 							})}
 							</div>
 							<a href={project.link} target="_blank">
-								Tap/Hover For More Info
+								Long Press Or Hover For More Info
 							</a>
 						</div>
 					)
