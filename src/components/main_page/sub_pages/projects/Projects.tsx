@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
 	return (
 		<div id="Projects">
 			<div className="sub-page-header-div">
-				<h1 className="sub-page-h1">Projects</h1>
+				<h1 className="sub-page-h1">Where's the Proof?</h1>
 			</div>
 			<div className="projects-container">
 				{projectsList.map((project, index) => {

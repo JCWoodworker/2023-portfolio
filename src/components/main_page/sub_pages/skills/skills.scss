@@ -3,4 +3,9 @@
 .skills-page-container {
   @include flex-row-wrap-center;
   margin: 1rem;
+  padding-top: 1rem;
+}
+
+.highlighted-skills {
+  color: $highlighted-skills-color;
 }

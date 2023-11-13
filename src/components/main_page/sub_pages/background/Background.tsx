@@ -4,7 +4,7 @@ const Home: React.FC = () => {
 	return (
 		<div id="Background">
 			<div className="sub-page-header-div">
-				<h1 className="sub-page-h1">About Me</h1>
+				<h1 className="sub-page-h1">Who Am I?</h1>
 			</div>
 			<div className="background-page-container">
 			<ul className="background-page-roles">
@@ -18,10 +18,10 @@ const Home: React.FC = () => {
 				</p>
 				<ul className="background-page-accomplishments">Accomplishments at Grubhub:
 					<li>
-						Built desktop app using Electron & React to handle bulk data
-						operations and restaurant updates
+						{`---> Built desktop app using Electron & React to handle bulk data
+						operations and restaurant updates`}
 					</li>
-					<li>Built repo of python automations saving HOURS of manual work</li>
+					<li>{`---> Built repo of python automations saving HOURS of manual work`}</li>
 				</ul>
 			</div>
 		</div>
