@@ -35,6 +35,7 @@ export const skillsArray: [string, boolean, boolean][] = [
 	["REST", true, true],
 	["Agile", true, true],
 	["Scrum", false, false],
+	["UI/UX", false, false],
 	["OOP", true, false],
 	["TDD", false, false],
 	["Jest", false, false],
