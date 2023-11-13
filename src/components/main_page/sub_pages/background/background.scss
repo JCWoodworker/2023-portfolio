@@ -11,13 +11,29 @@
 }
 
 .background-page-roles {
-	font-size: 1rem;
-	font-weight: bolder;
-	color: orange;
+	list-style: none;
+  text-align: center;
+  padding: 0;
+	li {
+		font-size: 1rem;
+		font-weight: bolder;
+		color: orange;
+		margin-bottom: 5px;
+	}
 }
 
 .background-page-accomplishments {
-	width: 60%
+	width: 80%;
+	list-style: none;
+  text-align: center;
+  padding: 0;
+	li {
+		font-size: 1rem;
+		font-weight: bolder;
+		color: orange;
+		margin-bottom: 5px;
+	}
+
 }
 
 #accomplishments {
