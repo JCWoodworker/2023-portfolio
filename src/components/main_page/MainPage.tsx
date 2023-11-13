@@ -41,17 +41,17 @@ const MainPage: React.FC = () => {
 				</div>
 			)}
 			{!showTitle && (
-				<div className="main-page-grid parent-fade-in-container">
-					<div className="main-page-child child-fade-in-container odd-section-bg">
+				<div className="main-page-grid">
+					<div className="main-page-child odd-section-bg">
 						<Background />
 					</div>
-					<div className="main-page-child child-fade-in-container even-section-bg">
+					<div className="main-page-child even-section-bg">
 						<Skills />
 					</div>
-					<div className="main-page-child child-fade-in-container odd-section-bg">
+					<div className="main-page-child odd-section-bg">
 						<Projects />
 					</div>
-					<div className="main-page-child child-fade-in-container even-section-bg">
+					<div className="main-page-child even-section-bg">
 						<Contact />
 					</div>
 				</div>

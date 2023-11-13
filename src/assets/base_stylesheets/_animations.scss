@@ -7,20 +7,6 @@
 	}
 }
 
-.child-fade-in-container {
-	opacity: 0;
-}
-
-.child-fade-in-container {
-	animation: fadeIn 1s forwards;
-}
-
-@for $i from 1 through 99 {
-	.parent-fade-in-container > .child-fade-in-container:nth-child(#{$i}) {
-		animation-delay: 0.05s * $i;
-	}
-}
-
 @keyframes fadeInUp {
 	to {
 		opacity: 1;
