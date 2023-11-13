@@ -1,26 +1,31 @@
 $backup-font-color: rgb(243, 243, 243);
 $black: rgb(0, 0, 0);
+$yellow-orange: rgba(255, 206, 82, 0.4);
+$sexy-red:rgba(210, 50, 71, 0.6);
+$sexy-red-transparent:rgba(210, 50, 71, 0.3);
+$summer-sunset: rgb(255, 166, 0);
+$summer-sunset-transparent: rgba(255, 166, 0, 0.3);
 
 $medium-gray: rgb(67, 67, 67);
-$medium-gray-transparent: rgba(67, 67, 67, 0.3);
+$medium-gray-transparent: rgba(67, 67, 67, 0.7);
 $dark-gray: rgb(30, 30, 30);
 $dark-gray-transparent: rgba(30, 30, 30, 0.94);
 
 $medium-blue: rgb(70, 70, 106);
 $dark-blue: rgb(18, 18, 30);
 $dark-blue-transparent: rgba(18, 18, 30, 0.8);
-$dark-blue-gradient: linear-gradient(to bottom right, rgb(18, 18, 30), rgb(70, 70, 106));
+$dark-blue-gradient: linear-gradient(to top right, rgb(18, 18, 30), rgb(66, 66, 112));
 
-$dark-slate-gray: rgb(38, 73, 73);
-$slate-gray-gradient: linear-gradient(to bottom left, rgb(10, 30, 30), rgb(150, 200, 200));
+$dark-slate-gray: rgb(43, 70, 70);
+$slate-gray-gradient: linear-gradient(to left, rgb(10, 30, 30), rgb(199, 236, 236));
 
-$navigation-background: $dark-blue-gradient;
-
-$yellow-orange: rgba(255, 206, 82, 0.3);
-$sexy-red:rgba(210, 50, 71, 0.3);
+$navigation-background: linear-gradient(to right, $sexy-red-transparent, $summer-sunset-transparent);
+$nav-link-hover: $summer-sunset;
+$nav-border: $summer-sunset;
+$social-icon-hover: $summer-sunset;
 
 $odd-sections-background: none;
-$even-sections-background: $yellow-orange;  
+$even-sections-background: $summer-sunset-transparent;  
 
-$project-tile-background: $sexy-red;
-$project-tile-background-hover: $dark-slate-gray;
+$project-tile-background: $sexy-red-transparent;
+$project-tile-background-hover: $sexy-red;
