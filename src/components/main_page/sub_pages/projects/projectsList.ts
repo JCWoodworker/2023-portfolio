@@ -18,7 +18,7 @@ export const projectsList: Project[] = [
 		name: "Business Link List",
 		link: "https://bizlinks.netlify.app/",
 		skills: ["Typescript", "React", "SCSS", "Netlify", "Git", "Github"],
-		deployment: "",
+		deployment: "Netlify",
 		description: "Some shit here",
 	},
 	// {
