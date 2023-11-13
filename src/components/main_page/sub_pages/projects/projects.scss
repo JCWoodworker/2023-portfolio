@@ -27,7 +27,7 @@
 	@for $i from 1 through 99 {
 		&.project-#{$i} {
 			transition: background-color 0.5s;
-			background-image	: $project-tile-background-hover;
+			background-color: $medium-gray-transparent;
 		}
 	}
 	&:hover {
