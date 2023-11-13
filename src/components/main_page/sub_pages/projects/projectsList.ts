@@ -1,11 +1,7 @@
-import { skillsArray } from "../skills/skillsArray"
-
-type Skill = typeof skillsArray[number]
-
 interface Project {
 	name: string
 	link: string
-	skills: Skill[]
+	skills: string[]
 	deployment: string
 	description: string
 }
