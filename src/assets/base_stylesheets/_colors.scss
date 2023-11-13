@@ -1,4 +1,4 @@
-$backup-font-color: rgb(243, 243, 243);
+$main-font-color: rgb(243, 243, 243);
 $black: rgb(0, 0, 0);
 $yellow-orange: rgba(255, 206, 82, 0.4);
 $sexy-red:rgba(210, 50, 71, 0.6);
@@ -26,6 +26,8 @@ $social-icon-hover: $summer-sunset;
 
 $odd-sections-background: none;
 $even-sections-background: $summer-sunset-transparent;  
+$even-sections-border-color: $main-font-color;
 
 $project-tile-background: $sexy-red-transparent;
 $project-tile-background-hover: $sexy-red;
+$project-tile-live-link: $summer-sunset;

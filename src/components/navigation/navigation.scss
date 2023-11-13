@@ -4,7 +4,7 @@
 @media (min-width: 1101px) {
 	.nav-container {
 		@include flex-col-center;
-		border-right: 2px solid $backup-font-color;
+		border-right: 2px solid $main-font-color;
 		height: 100vh;
 		position: sticky;
 		top: 0;

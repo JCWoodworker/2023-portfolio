@@ -38,7 +38,7 @@
 			transition: transform 0.5s;
 			border-bottom: 1px solid $medium-gray;
 			cursor: pointer;
-			color: yellow;
+			color: $project-tile-live-link;
 		}
 		h1 {
 			font-size: 2rem;
