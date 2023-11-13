@@ -16,10 +16,11 @@ $slate-gray-gradient: linear-gradient(to bottom left, rgb(10, 30, 30), rgb(150, 
 
 $navigation-background: $dark-blue-gradient;
 
-$yellow-orange: rgba(255, 206, 82, 0.50);
+$yellow-orange: rgba(255, 206, 82, 0.3);
+$sexy-red:rgba(210, 50, 71, 0.3);
 
 $odd-sections-background: none;
 $even-sections-background: $yellow-orange;  
 
-$project-tile-background: black;
-$project-tile-background-hover: rgba(210, 50, 71, 0.4);
+$project-tile-background: $sexy-red;
+$project-tile-background-hover: $dark-slate-gray;
